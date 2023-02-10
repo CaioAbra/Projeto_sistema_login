@@ -1,0 +1,63 @@
+body {
+    width: 100%;
+    min-height: 100vh !important;
+}
+
+section#login-form {
+    background-image: url('../img/Bg_login.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh !important;
+}
+
+section#login-form h1 {
+    font-weight: 700 !important;
+    text-shadow: 5px -2px 14px rgb(0 0 0 / 74%);
+}
+
+section#login-form>.container {
+    padding-top: 20vh;
+}
+
+section.fixed-bottom>div.glass-bottom,
+section.fixed-top>div.glass-top {
+    height: 10vh;
+    backdrop-filter: blur(1px);
+}
+
+nav {
+    border-bottom: 1px solid #008000;
+    background-color: #afaeae !important;
+}
+
+nav a.navbar-brand,
+nav li.nav-item a.nav-link {
+    color: #008000;
+    position: relative;
+}
+
+nav li.nav-item a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #008000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav li.nav-item a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+nav a.navbar-brand:hover {
+    color: #008000;
+}
